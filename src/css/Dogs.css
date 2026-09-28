@@ -1,0 +1,186 @@
+/* Main Page */
+
+.dogs-page {
+    min-height: 100vh;
+    padding: 50px 7%;
+    background: #f7f8f4;
+}
+
+
+/* Header */
+
+.dogs-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.dogs-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #26351f;
+}
+
+.dogs-header p {
+    font-size: 17px;
+    color: #6b7167;
+}
+
+
+/* Cards Grid */
+
+.dogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Dog Card */
+
+.dog-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.dog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Image */
+
+.dog-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.dog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.dog-card:hover .dog-image img {
+    transform: scale(1.06);
+}
+
+
+/* Information */
+
+.dog-info {
+    padding: 22px;
+}
+
+.dog-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #26351f;
+}
+
+.breed {
+    margin-top: 6px;
+    color: #7b8175;
+    font-size: 15px;
+}
+
+
+/* Details */
+
+.dog-details {
+    display: flex;
+    gap: 18px;
+    margin: 18px 0;
+    font-size: 14px;
+    color: #4e554a;
+}
+
+.dog-details span {
+    background: #f0f3eb;
+    padding: 7px 10px;
+    border-radius: 8px;
+}
+
+
+/* Description */
+
+.description {
+    color: #686d64;
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+
+/* Bottom */
+
+.dog-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Status */
+
+.status {
+    background: #e6f3df;
+    color: #3c6b2f;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Button */
+
+.dog-bottom button {
+    border: none;
+    background: #536b43;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dog-bottom button:hover {
+    background: #3f5433;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .dogs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .dogs-page {
+        padding: 35px 20px;
+    }
+
+    .dogs-header h1 {
+        font-size: 28px;
+    }
+
+    .dogs-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

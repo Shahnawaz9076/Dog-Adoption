@@ -1,0 +1,119 @@
+.requests-page {
+    min-height: 100vh;
+    background: #f7f8f4;
+    padding: 50px 30px;
+}
+
+.requests-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.requests-container h1 {
+    color: #26351f;
+    margin-bottom: 5px;
+}
+
+.requests-subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #536b43;
+    color: white;
+}
+
+td {
+    color: #444;
+}
+
+tr:hover {
+    background: #f7f9f5;
+}
+
+.status {
+    background: #fff3cd;
+    color: #856404;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.no-requests {
+    background: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.approve-btn {
+    background: #dff2d8;
+    color: #35642d;
+}
+
+.approve-btn:hover {
+    background: #c8e8be;
+}
+
+.reject-btn {
+    background: #ffe0e0;
+    color: #a33a3a;
+}
+
+.reject-btn:hover {
+    background: #ffcaca;
+}
+
+
+/* Status Colors */
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.approved {
+    background: #dff2d8;
+    color: #35642d;
+}
+
+.status.rejected {
+    background: #ffe0e0;
+    color: #a33a3a;
+}

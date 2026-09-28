@@ -1,0 +1,110 @@
+.featured-section {
+    padding: 80px 10%;
+    background: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.section-heading span {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.dog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.dog-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.dog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.dog-image {
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    font-size: 110px;
+}
+
+.dog-info {
+    padding: 22px;
+}
+
+.dog-info h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.breed {
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.dog-details {
+    display: flex;
+    justify-content: space-between;
+
+    color: #6b7280;
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.view-btn {
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #1d4ed8;
+}
